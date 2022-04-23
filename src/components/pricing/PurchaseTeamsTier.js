@@ -16,7 +16,7 @@ export const OPTIONS_FOR_NUMBER_OF_ENGINEERS = [
   Object.freeze({ id: 150, name: '150 developers', dollarCentCostPerDevPerMonth: 1500 }),
 ];
 
-const TeamsPricingTier = () => {
+const PurchaseTeamsTier = () => {
   const [numberOfEngineers, setNumberOfEngineers] = useState(OPTIONS_FOR_NUMBER_OF_ENGINEERS[0].id);
   const dollarCentCostPerDevPerMonth = OPTIONS_FOR_NUMBER_OF_ENGINEERS.find((opt) => opt.id === numberOfEngineers).dollarCentCostPerDevPerMonth;
   const dollarCentCostPerMonth = numberOfEngineers * dollarCentCostPerDevPerMonth;
@@ -100,4 +100,4 @@ const TeamsPricingTier = () => {
   );
 };
 
-export default TeamsPricingTier;
+export default PurchaseTeamsTier;
